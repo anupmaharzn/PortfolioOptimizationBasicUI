@@ -1,1 +1,2 @@
 # PortfolioOptimizationBasicUI
+#static pages only
