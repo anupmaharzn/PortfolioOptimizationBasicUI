@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Portfolio Optimization</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header3">
+        <nav>
+            
+         <a href="index.html"> <img src="images/sss.svg"> </a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+          
+            </div>
+          
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+         
+    </section>
+
+<!-- content for portfolio calculation-->
+
+  <section class="about-portfolio">
+    <div class="row">
+
+        <div class="about-col">
+            <h1>Why Optimal Portfolios?</h1>
+            <p>
+                The art of selecting the right investment policy for the individuals in terms of minimum risk and maximum return is called as portfolio management.
+                Portfolio optimization is a crucial part of managing risk and maximizing returns from a set of investments. 
+                Be it for the fundamental investor, or the quantitative trader, portfolio optimization is imperative for a successful portfolio.
+            </p>
+            <a  href="https://medium.com/engineer-quant/optimal-portfolios-why-and-how-be0cdcf16485" target="_blank" rel="noopener noreferrer" class="hero-btn red-btn">More Information</a>
+        </div>
+
+        <div class="about-col">
+             <img src="images/risks.png">
+        </div>
+
+    </div>
+  </section> 
+
+
+ <section class="portfolio">
+    <h1>Portfolio Optimization Calculation</h1>
+
+
+        
+            <div class="formContainer">
+
+                <div class="form-groups">
+                    <label for="amount">Enter your Investment Amount (USD)</label>
+                    <input type="number" id="amount"  min="100" placeholder="$ min Amount 100 USD">
+                    <p> Click Optimizer Button for Portfolio Optimization Calculation</p>
+                </div>
+                <button type="submit" class="hero-btn red-btn">Optimizer</button>
+    
+        
+    
+    </div>
+ </section>
+ 
+
+
+
+ <!-- javascript for toggle menu-->
+  <script>
+      var navlinks = document.getElementById("navlinks");
+      function showmenu(){
+          navlinks.style.right='0';
+      }
+      function hidemenu(){
+          navlinks.style.right='-200px';
+      }
+
+  </script>  
+</body>
+
+</html>

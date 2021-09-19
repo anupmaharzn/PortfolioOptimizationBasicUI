@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            
+         <a href="index.html"> <img src="images/sss.svg"> </a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+          
+            </div>
+          
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+         
+      <h1>About Stock Portfolio <br> Optimization</br></h1>
+    </section>
+
+<!--  content of about page-->
+
+<section class="about-us">
+    <div class="row">
+
+        <div class="about-col">
+            <h1>What is Portfolio Optimization?</h1>
+            <p>
+                Portfolio optimization is the process of selecting the best portfolio (asset distribution), out of the set of all portfolios being considered, according to some objective. 
+                The objective typically maximizes factors such as expected return, and minimizes costs like financial risk. 
+                Factors being considered may range from tangible (such as assets, liabilities, earnings or other fundamentals) to intangible (such as selective divestment).
+            </p>
+            <a  href="https://en.wikipedia.org/wiki/Portfolio_optimization" target="_blank" rel="noopener noreferrer" class="hero-btn red-btn">More Information</a>
+        </div>
+
+        <div class="about-col">
+             <img src="images/about2.jpg">
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+
+
+
+
+ 
+<!-- javascript for toggle menu-->
+  <script>
+      var navlinks = document.getElementById("navlinks");
+      function showmenu(){
+          navlinks.style.right='0';
+      }
+      function hidemenu(){
+          navlinks.style.right='-200px';
+      }
+
+  </script>  
+</body>
+
+</html>

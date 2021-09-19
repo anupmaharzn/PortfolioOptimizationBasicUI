@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header2">
+        <nav>
+            
+         <a href="index.html"> <img src="images/sss.svg"> </a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+          
+            </div>
+          
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+         
+   
+    </section>
+
+    <!-- dashboard section-->
+
+    <section class="dashboard">
+          <h1>Stocks Used For Optimization Project</h1>
+        <div class="row">
+
+            <div class="stock-col">
+                <img src="images/facebook.png">
+                
+                    <h1>Facebook</h1>
+                    <a href="facebook.html" class="hero-btn red-btn">Detail Info</a>
+
+            </div>
+            <div class="stock-col">
+                <img src="images/google.png"/>
+                
+                    <h1>Google</h1>
+                    <a href="" class="hero-btn red-btn">Detail Info</a>
+                
+            </div>
+            <div class="stock-col">
+                <img src="images/tesla.png"/>
+                   <h1>Tesla</h1>
+                    <a href="" class="hero-btn red-btn">Detail Info</a>
+                
+            </div>
+        </div>
+
+    </section>
+
+
+ 
+<!-- javascript for toggle menu-->
+  <script>
+      var navlinks = document.getElementById("navlinks");
+      function showmenu(){
+          navlinks.style.right='0';
+      }
+      function hidemenu(){
+          navlinks.style.right='-200px';
+      }
+
+  </script>  
+</body>
+
+</html>
