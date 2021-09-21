@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Portfolio Optimization</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header4">
+        <nav>
+            
+         <a href="index.html"> <img src="images/sss.svg"> </a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+          
+            </div>
+          
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+           
+    </section>
+
+ <!-- Detail about google-->
+
+ 
+
+ <section class="about-google">
+    <h1>About Google</h1>
+    <div class="google-row">
+        <div class="google-col">
+            <p>
+                Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, a search engine, cloud computing, software, and hardware. 
+                It is considered one of the Big Five companies in the American information technology industry, along with Amazon, Facebook, Apple, and Microsoft.
+                The company's rapid growth since incorporation has included products, acquisitions, and partnerships beyond Google's core search engine, (Google Search).
+              It offers services designed for work and productivity (Google Docs, Google Sheets, and Google Slides), email (Gmail), scheduling and time management (Google Calendar), cloud storage (Google Drive), instant messaging and video chat (Google Duo, Google Chat, and Google Meet), language translation (Google Translate), 
+              mapping and navigation (Google Maps, Waze, Google Earth, and Street View), podcast hosting (Google Podcasts), video sharing (YouTube), blog publishing (Blogger), note-taking (Google Keep and Jamboard), and photo organizing and editing (Google Photos).
+            </p>
+            <a  href="https://en.wikipedia.org/wiki/Google" target="_blank" rel="noopener noreferrer" class="hero-btn red-btn">More Information</a>
+        </div>
+
+        <div class="google-col">
+             <img src="images/google.svg">
+        </div>
+
+    </div>
+
+    <section class="google-graphs">
+       
+           <h1>Graph Related To Google Stock</h1>
+
+           <!-- chart ko here-->
+           <div class='chart-container'>
+    
+           </div>
+       
+    </section>
+
+
+</section>
+  
+
+
+
+
+
+
+
+
+ 
+<!-- javascript for toggle menu-->
+  <script>
+      var navlinks = document.getElementById("navlinks");
+      function showmenu(){
+          navlinks.style.right='0';
+      }
+      function hidemenu(){
+          navlinks.style.right='-200px';
+      }
+
+  </script>
+  <!--chart import-->  
+  <script src="chart/chart.js"></script>
+  <script src="chart/d3.js"></script>
+  
+</body>
+
+</html>
