@@ -307,7 +307,8 @@
         height: 85vh;
         background-color: #fff;
     }
-    /* Table style */
+    /* Table style  */
+    /*same for google.html tesla.html hershey.html %/
     /*for me "rem" vanyeko simple unit ho simple font size 16px */
     
     .tablecontainer {
@@ -374,7 +375,7 @@
         background-color: #f4f6fb;
     }
     /* SEPTEMBER 26  RESTYLING DASHBOARD.HTML; */
-    /* dashboard-page*/
+    /* Dashboard-page*/
     
     .sub-header2 {
         height: 55vh;
