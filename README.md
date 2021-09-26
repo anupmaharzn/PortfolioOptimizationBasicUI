@@ -1,3 +1,4 @@
 # PortfolioOptimizationBasicUI
 #static pages only
-#individual stock detail page left to do 
+#google.html page almost complete
+#remain stock pages left to do 
