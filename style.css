@@ -374,7 +374,6 @@
     tr:nth-child(even) {
         background-color: #f4f6fb;
     }
-    /* SEPTEMBER 26  RESTYLING DASHBOARD.HTML; */
     /* Dashboard-page*/
     
     .sub-header2 {
@@ -386,110 +385,69 @@
         text-align: center;
         color: #fff;
     }
+    /*from stock list div*/
     
-    .dashboard {
-        display: flex;
-        justify-content: space-evenly;
-        column-gap: 30px;
+    .heading {
+        margin-top: 20px;
+        font-size: 60px;
+        margin-bottom: 0;
+        font-weight: 900;
+        text-align: center;
+    }
+    
+    .stock-container {
         width: 80%;
-        height: 40vh;
-        margin: auto;
-        padding: 5rem;
-        margin-bottom: 150px;
-        background: #eff3de;
-        border-radius: 15px;
-    }
-    
-    .dashboard h2 {
-        font-size: 25px;
-        font-weight: 600;
-        color: black;
-    }
-    
-    .dashboard .dropdown-title {
-        width: 350px;
-        height: 50px;
-        background: #26c6c4;
+        margin: 50px auto;
+        height: auto;
+        background: #f0fff1;
+        padding: 25px;
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
-        flex-wrap: unset;
-        align-items: center;
-        cursor: pointer;
+        flex-wrap: wrap;
+        gap: 20px;
         border-radius: 10px;
+    }
+    
+    .stock-tile {
+        width: 35%;
+        height: 25%;
+        background-color: transparent;
+        border-radius: 5px;
+        border: 1.5px solid #00b4d8;
         overflow: hidden;
-    }
-    
-    .dashboard .menu,
-    .menu1,
-    .menu2 {
-        padding: 10px 20px;
-        background: #ffffff;
-        box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
-        border-radius: 15px;
-        transition: 0.5;
-        visibility: hidden;
-        opacity: 0;
-    }
-    
-    .dashboard .menu,
-    .dashboard .menu1,
-    .dashboard .menu2 {
-        width: 350px;
-        height: 180px;
-        font-size: 18px;
-        font-weight: 500;
-        padding: 20px 0;
-        line-height: 1.2em;
-    }
-    
-    .menu.active,
-    .menu1.active,
-    .menu2.active {
-        visibility: visible;
-        opacity: 1;
-    }
-    
-    .menu ul li,
-    .menu1 ul li,
-    .menu2 ul li {
-        list-style: none;
-        padding: 10px;
-        /*harek list ko top line ho*/
-        border-top: 1px solid rgba(0, 0, 0, 0.05);
-        display: flex;
-        justify-content: flex-start;
-        column-gap: 20px;
-        align-items: center;
-    }
-    
-    .menu ul li img,
-    .menu1 ul li img,
-    .menu2 ul li img {
-        max-width: 40px;
-        margin-right: 20px;
-        opacity: 0.7;
-        transition: 0.5s;
-    }
-    
-    .menu ul li:hover img,
-    .menu1 ul li:hover img,
-    .menu2 ul li:hover img {
-        opacity: 1;
-    }
-    
-    .menu ul li a,
-    .menu1 ul li a,
-    .menu2 ul li a {
-        display: inline-block;
-        text-decoration: none;
-        color: #2f9c95;
         font-size: 25px;
-        font-weight: 800;
-        transition: 0.5;
+        font-weight: 500;
+        cursor: pointer;
+        padding: 10px;
+        padding-right: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
     }
     
-    .menu ul li a:hover,
-    .menu1 ul li a:hover,
-    .menu2 ul li a:hover {
-        color: #03045e;
+    .stock-tile a {
+        text-decoration: none;
+        color: #4361ee;
+    }
+    
+    .stock-tile img {
+        width: 80px;
+        height: 70px;
+    }
+    
+    .stock-tile:hover {
+        border: 2px solid #03045e;
+        transition: 0.5s;
+        transform: scale(1.1);
+    }
+    
+    .stock-tile:hover a {
+        color: #480ca8;
+    }
+    
+    .stock-icon {
+        display: inline-flex;
+        align-items: center;
     }
