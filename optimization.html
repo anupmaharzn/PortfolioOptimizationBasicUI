@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header4">
+        <nav>
+
+            <a href="index.html"> <img src="images/icons8-investment-portfolio.svg"> </a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="optimization.html">Optimization</a></li>
+                </ul>
+
+            </div>
+
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+
+    </section>
+
+
+
+    <!-- Optimization page-->
+    <h1>Select Investment Stock</h1>
+    <div class="optimization-container">
+
+        <div class="container-items">
+            <input type="checkbox" class="box" id="">
+            <span><img src="stock_icon/google.svg"></img></span>
+            <span class="text">Google</span>
+        </div>
+        <div class="container-items">
+            <input type="checkbox" class="box" id="">
+            <span><img src="stock_icon/tesla.svg"></img></span>
+            <span class="text">Tesla</span>
+        </div>
+        <div class="container-items">
+            <input type="checkbox" class="box" id="">
+            <span><img src="stock_icon/apple.svg"></img></span>
+            <span class="text">Apple</span>
+        </div>
+        <div class="container-items">
+            <input type="checkbox" class="box" id="">
+            <span><img src="stock_icon/cocacola.svg"></img></span>
+            <span class="text">cocacola</span>
+        </div>
+        <div class="container-items">
+            <input type="checkbox" class="box" id="">
+            <span><img src="stock_icon/facebook.svg"></img></span>
+            <span class="text">Facebook</span>
+        </div>
+        <div class="container-items">
+            <input type="checkbox" class="box" id="">
+            <span><img src="stock_icon/SPG.svg"></img></span>
+            <span class="text">Simon Property </span>
+        </div>
+        <div class="container-items">
+            <input type="checkbox" class="box" id="">
+            <span><img src="stock_icon/nike.svg"></img></span>
+            <span class="text">Nike</span>
+        </div>
+        <div class="container-items">
+            <input type="checkbox" class="box" id="">
+            <span><img src="stock_icon/netflix.svg"></img></span>
+            <span class="text">Netflix</span>
+        </div>
+        <div class="container-items">
+            <input type="checkbox" class="box" id="">
+            <span><img src="stock_icon/wwe.svg"></img></span>
+            <span class="text">World Wrestling</span>
+        </div>
+        <div class="container-items">
+            <input type="checkbox" class="box" id="">
+            <span><img src="stock_icon/ibm.svg"></img></span>
+            <span class="text">IBM</span>
+        </div>
+        <button type="submit" class="hero-btn red-btn"> Done </button>
+    </div>
+    <h1> Gain Expectation</h1>
+
+    <div class="container">
+        <div class="containeritems">
+            <label for="amount">Enter your Gain expectation</label>
+            <input type="number" id="amount" placeholder="Gain %"></input>
+
+            <button type="submit" class="hero-btn red-btn">Optimizer</button>
+        </div>
+    </div>
+
+    <!-- After optimization part ko lagi -->
+    <div class="optimization-result">
+
+    </div>
+
+
+
+
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showmenu() {
+            navlinks.style.right = '0';
+        }
+
+        function hidemenu() {
+            navlinks.style.right = '-200px';
+        }
+    </script>
+
+
+</body>
+
+</html>
